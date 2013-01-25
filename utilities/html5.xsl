@@ -24,20 +24,10 @@
 
 			<link rel="shortcut icon" href="{$workspace}/assets/images/favicon.png" />
 			<link rel="icon" type="images/png" href="{$workspace}/assets/images/favicon.png" />
-			<link rel="stylesheet" media="screen" href="{$workspace}/css/bootstrap.min.css" />
-			<link rel="stylesheet" media="screen" href="{$workspace}/css/bootstrap-responsive.min.css" />
-			<link rel="stylesheet" media="screen" href="{$workspace}/css/museosans/stylesheet.css" />
 			<link rel="stylesheet" media="screen" href="{$workspace}/css/myiabonner.css" />
 
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-			<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-			<script src="{$workspace}/js/bootstrap.min.js"></script>
-			<script src="{$workspace}/js/myiabonner.js"></script>
-			<script src="{$workspace}/js/jquery.cycle-lite.min.js"></script>
-			<script src="{$workspace}/js/jquery.iskip.js"></script>
-			<script src="{$workspace}/js/modernizr-custom.min.js"></script>
-			<script src="{$workspace}/js/jquery.sharrre-1.3.3.min.js"></script>
-			<script src="{$workspace}/js/placeholder-min.js"></script>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+			<script src="{$workspace}/js/master-ck.js"></script>
 
 			<xsl:comment><![CDATA[[if lt IE 9]><script type="text/javascript" src="]]><xsl:value-of select="$root"/><![CDATA[/workspace/js/html5shiv.min.js"></script><![endif]]]></xsl:comment>
 			<xsl:comment><![CDATA[[if (gte IE 6)&(lte IE 8)]><script type="text/javascript" src="]]><xsl:value-of select="$root"/><![CDATA[/workspace/js/selectivizr.min.js"></script><![endif]]]></xsl:comment>
