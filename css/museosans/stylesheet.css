@@ -1,0 +1,20 @@
+
+@font-face {
+  font-family: 'museosansregular';
+  src: url('museosansregular.eot?#iefix') format('embedded-opentype'), 
+       url('museosansregular.woff') format('woff'), 
+       url('museosansregular.ttf')  format('truetype'),
+       url('museosansregular.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'museosansbold';
+  src: url('museosansbold.eot?#iefix') format('embedded-opentype'), 
+       url('museosansbold.woff') format('woff'), 
+       url('museosansbold.ttf')  format('truetype'),
+       url('museosansbold.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
