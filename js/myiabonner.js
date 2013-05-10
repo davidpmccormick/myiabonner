@@ -3,7 +3,7 @@ function scrollToContent() {
 	// offset of the element from the top
 	$distanceToScroll = $('.maincontent').offset().top - 20;
 	// animate the scroll
-	$('body, html').animate({ scrollTop: $distanceToScroll }, 500, 'easeInOutQuint');
+	$('body, html').animate({ scrollTop: $distanceToScroll }, 500);
 }
 
 // document ready

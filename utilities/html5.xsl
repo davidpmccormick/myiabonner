@@ -54,8 +54,10 @@
 						<!-- end of phone navbar -->
 						<div class="row clearfix hidden-phone ">
 							<div style="position:fixed;top:0;left:0;right:0;height:10px;background:#fff;z-index:999;width:100%;"></div>
-							<nav class="nav span12" style="background:#fff;z-index:999;margin-top:10px;margin-left:20px;padding-bottom:10px;position:fixed;" data-spy="affix" data-offset-top="0">
-								<xsl:apply-templates select="data/navigation"/>
+							<nav class="nav" style="background:#fff;z-index:999;margin-top:10px;padding-bottom:10px;position:fixed;" data-spy="affix" data-offset-top="0">
+								<div class="span12">
+									<xsl:apply-templates select="data/navigation"/>
+								</div>
 							</nav>
 						</div>
 						<div class="row">
@@ -106,7 +108,6 @@
 			
 			  ga('create', 'UA-40838230-1', 'myiabonner.co.uk');
 			  ga('send', 'pageview');
-			
 			</script>		
 		</body>
 	</html>
