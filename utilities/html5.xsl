@@ -90,11 +90,24 @@
 							<div class="span3">
 								<p style="margin-top:10px; margin-bottom:0; font-size:16px;line-height:1.2;"><a href="http://www.facebook.com/pages/Myia-Bonner-Jewellery/121368967907130">Facebook</a></p>
 								<p style="margin-bottom:20px; font-size:16px;margin-top:4px;line-height:1.2;"><a href="https://twitter.com/myiabonner">Twitter</a></p>
-							</div>						
+							</div>
+							<div class="span3">
+								<p style="margin-top:10px; margin-bottom:0; font-size:16px;line-height:1.2; padding-bottom:20px; float:right;"><a href="http://eepurl.com/rkkfz">Newsletter</a></p>
+							</div>					
 						</div>
 					</div>					
 				</footer>
 			</xsl:if>
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			  ga('create', 'UA-40838230-1', 'myiabonner.co.uk');
+			  ga('send', 'pageview');
+			
+			</script>		
 		</body>
 	</html>
 </xsl:template>
