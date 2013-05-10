@@ -22,6 +22,7 @@
 		<!-- ITEMS -->
 		<xsl:apply-templates select="compilecollections/entry" />
 		<xsl:apply-templates select="compilearchiveimages/entry" />
+		<xsl:apply-templates select="compileshowcaseimages/entry" />
 		<xsl:apply-templates select="compilecollectionitems/entry" />
 		<xsl:apply-templates select="compilenews/entry" />
 		<xsl:apply-templates select="compilenewsimages/entry" />
@@ -49,6 +50,12 @@
 </xsl:template>
 
 <xsl:template match="compilearchiveimages/entry">
+	<div class="span12 relative" style="clear:both;margin-bottom:20px;">
+		<img src="{$root}/image/2/800/530/5/0/assets/images/{image}" width="100%" height="auto" />
+	</div>
+</xsl:template>
+
+<xsl:template match="compileshowcaseimages/entry">
 	<div class="span12 relative" style="clear:both;margin-bottom:20px;">
 		<img src="{$root}/image/2/800/530/5/0/assets/images/{image}" width="100%" height="auto" />
 	</div>

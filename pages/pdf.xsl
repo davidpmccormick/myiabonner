@@ -43,6 +43,7 @@
 		<!-- end enter your name -->
 		<xsl:apply-templates select="pdfcollections/entry" />
 		<xsl:apply-templates select="pdfarchiveimages/entry" />
+		<xsl:apply-templates select="pdfshowcaseimages/entry" />
 		<xsl:apply-templates select="pdfcollectionitems/entry" />
 		<xsl:apply-templates select="pdfnews/entry" />
 		<xsl:apply-templates select="pdfnewsimages/entry" />
@@ -68,6 +69,15 @@
 	</div>
 </xsl:template>
 <!-- end pdfarchiveimages -->
+
+<!-- pdfshowcaseimages -->
+<xsl:template match="pdfshowcaseimages/entry">
+	<div class="span4" style="text-align:center;">
+		<img src="{$root}/image/2/300/200/5/0/assets/images/{image/filename}" width="100%" height="auto" />
+		<xsl:call-template name="removefrompdf" />
+	</div>
+</xsl:template>
+<!-- end pdfshowcaseimages -->
 
 <!-- pdfcollectionitems -->
 <xsl:template match="pdfcollectionitems/entry">

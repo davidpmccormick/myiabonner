@@ -7,6 +7,8 @@
 <xsl:template match="data">
 	<div class="row collectionthumbnails">
 		<xsl:apply-templates select="collections/entry" /> <!-- below -->
+		
+		<!-- archive -->
 		<div class="span4">
 			<a href="{$root}/collections/archive">
 				<img class="mousemove" width="100%" height="auto">
@@ -29,6 +31,35 @@
 				</div>
 			</a>
 		</div>
+		<!-- end archive -->
+		
+		<!-- showcase -->
+		<xsl:if test="showcasethumbnails/entry != ''">
+		<div class="span4">
+			<a href="{$root}/collections/showcase">
+				<img class="mousemove" width="100%" height="auto">
+					<xsl:attribute name="src">
+						<xsl:value-of select="$root" />
+						<xsl:text>/image/2/300/200/5/0/assets/images/</xsl:text>
+						<xsl:value-of select="showcasethumbnails/entry/thumbnail-image/filename" />
+					</xsl:attribute>
+					<xsl:attribute name="rel">
+						<xsl:for-each select="showcasethumbnails/entry">
+							<xsl:value-of select="$root" />
+							<xsl:text>/image/2/300/200/5/0/assets/images/</xsl:text>
+							<xsl:value-of select="thumbnail-image/filename" />
+							<xsl:if test="position() != last()"><xsl:text>,</xsl:text></xsl:if>
+						</xsl:for-each>
+					</xsl:attribute>
+				</img>
+				<div class="titlecontainer clearfix">
+					<h2>Showcase</h2>
+				</div>
+			</a>
+		</div>
+		</xsl:if>
+		<!-- end showcase -->
+		
 	</div>
 </xsl:template>
 
